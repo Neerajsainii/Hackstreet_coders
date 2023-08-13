@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: 'poppins', 'sans-sarif';
+    /* background-color: rgb(237, 237, 237); */
+
+    /* background: rgb(183, 205, 183); */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(62, 201, 247);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:black;
+}
+
+nav ul li a:hover {
+    color: rgb(125, 130, 6);
+}
+
+.nav-img {
+    height: 50px;
+    width: 100px;
+}
+
+.logo {
+    background-image: url("../../photos/cipla.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+
+
+}
+
+
+.first-section {
+    display: flex;
+    justify-content: space-around;
+    /* margin: 80px 0; */
+    /* background: rgb(183, 205, 183); */
+    background-image:url("/public/photos/bg.jpg");
+    background-size: 100%;
+
+    background-color: rgba(0, 200, 255, 0.466);
+    margin-bottom: 400px;
+
+
+}
+
+.left-section {
+    width: 40%;
+    font-size: 7rem;
+    padding: 0 90px;
+    margin: 120px;
+
+
+}
+.red{
+    color: red;
+
+}
+
+.right-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 120px;
+}
+
+.right-section img {
+    margin: 0;
+    padding: 0 10px;
+    width: 150%;
+
+}
+/* .right-section img:hover{
+    transform: scale(0.75);
+    animation: backwards;
+} */
+
+
+.st {
+    position: relative;
+    border-radius: 80%;
+    display: flex;
+    justify-content: none;
+
+}
+
+.image1 {
+    position: relative;
+
+}
+
+.image2 {
+    position: absolute;
+    padding-top: 200px;
+    margin-top: 200px;
+
+
+}
+.second-section{
+    margin-bottom: 570px;
+}
+.about h1{
+    margin-top: -380px;
+    margin-left: 750px;
+    font-size: 3.5rem;
+
+}
+.about-img{
+    position: relative;
+    border-radius: 100%;
+    display: flex;
+    justify-content: none;
+    margin:-280px 90px;
+
+}
+.about p{
+    margin-top: 35px;
+    margin-left: 700px;
+    margin-right: 100px;
+    text-align: justify;
+   font-size:1.5rem ;
+}
+
+.heading h2 {
+    
+    font-size: 4rem;
+    margin-left: 600px;
+    margin-right: 100px;
+    text-align: justify;
+   margin-top: 350px;
+
+}
+hr{
+    border: 0;
+    background: #535354;
+    height: 1.2px;
+    margin: 2.5px 84px;
+}
+.third-section{
+    background-color: rgb(189, 240, 244);
+}
+
+ 
+ 
+.container{
+    
+    width: 400px;
+    
+    top: 10px;
+    left: 20px;
+}
+
+
+
+.image-container {
+    position: relative; 
+    width: 500px; 
+    height: 500px; 
+  }
+  .a{
+    margin-left: 100px;
+    height: 250px;
+    width: 250px;
+    margin-top: 50px;
+     
+
+  }
+  .a:hover{
+    transform: scale(1.05);
+  }
+  
+  .button{
+    position: relative;
+    top:-150px; right:45px; 
+    margin-top: -390px;
+    margin-left: 170px;
+    font-size: 2.6rem;
+    text-decoration: none;
+
+    color:greenyellow;
+    
+
+  }
+  .button:hover{
+    color:rgb(220, 11, 11);
+    text-decoration: overline;
+    text-decoration: underline overline;
+    
+  }
+  .a1{
+    margin-left: 450px;
+    height: 260px;
+    width: 270px;
+    margin-top: -400px;
+    margin-bottom: 70px;
+  }
+  .button1{
+    position: relative;
+    top:-150px; 
+    right:45px; 
+    margin-top: -990px;
+    
+    margin-left: 550px;
+    font-size: 2.6rem;
+    text-decoration: none;
+    color:rgb(2, 29, 45);
+    
+    
+  }
+  .button1:hover{
+    color:greenyellow;
+    text-decoration: overline;
+    text-decoration: underline overline;
+  }
+  .a1:hover{
+    transform: scale(1.05);
+  }
+  
