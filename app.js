@@ -25,15 +25,21 @@ app.use(auth(config));
   
   app.get("/", (req, res) => {
       res.sendFile(path.join(__dirname, "public/medicL.html"));
-    });
-//  const express = require('express');
-//  const app = express();
- 
-// app.get("*",(req,res) =>{
-//     res.render('error');
-// });
-app.listen(port, () => {
-    console.log("Hari bol its Working!!");
-});
+  });
+  app.get("/fitness&nutrition",(req,res) =>{
+      res.render('fitness&nutrition');
+  });
+  app.get("/about",(req,res) =>{
+      res.render('medicL');
+  });
+  app.get("/Services",(req,res) =>{
+      res.render('medicL');
+  });
+  app.get("*",(req,res) =>{
+      res.render('error');
+  });
+  app.listen(port, () => {
+      console.log("Hari bol its Working!!");
+  });
 
 
