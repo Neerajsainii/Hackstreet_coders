@@ -31,6 +31,8 @@ app.use(auth(config));
   });
   app.get("/about",(req,res) =>{
       res.render('medicL');
+  }); app.get("/lifesaver",(req,res) =>{
+      res.render('medicl1');
   });
   app.get("/Services",(req,res) =>{
       res.render('medicL');
