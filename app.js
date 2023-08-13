@@ -37,6 +37,9 @@ app.use(auth(config));
   app.get("/Services",(req,res) =>{
       res.render('medicL');
   });
+ app.get("/termsandcondition",(req,res) =>{
+      res.render('termsandcondition');
+  });
   app.get("*",(req,res) =>{
       res.render('error');
   });
