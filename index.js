@@ -5,7 +5,7 @@ const path = require("path");
 const hbs = require("hbs");
 const port = process.env.PORT || 3000;
 
-const app = express();
+const index = express();
 const { auth, requiresAuth } = require('express-openid-connect');
 const config = {
     authRequired: false,
@@ -18,32 +18,32 @@ const config = {
 app.use(auth(config));
   
   const static = path.join(__dirname,"/");
-  app.use(express.static(path.join(__dirname, 'public')));
+  index.use(express.static(path.join(__dirname, 'public')));
   
-  app.set("view engine","hbs");
-  app.use(express.static(static));
+  index.set("view engine","hbs");
+  index.use(express.static(static));
   
-  app.get("/", (req, res) => {
+  index.get("/", (req, res) => {
       res.sendFile(path.join(__dirname, "public/medicL.html"));
   });
-  app.get("/fitness&nutrition",(req,res) =>{
+  index.get("/fitness&nutrition",(req,res) =>{
       res.render('fitness&nutrition');
   });
-  app.get("/about",(req,res) =>{
+  index.get("/about",(req,res) =>{
       res.render('medicL');
-  }); app.get("/lifesaver",(req,res) =>{
+  }); index.get("/lifesaver",(req,res) =>{
       res.render('medicl1');
   });
-  app.get("/Services",(req,res) =>{
+  index.get("/Services",(req,res) =>{
       res.render('medicL');
   });
- app.get("/termsandcondition",(req,res) =>{
+ index.get("/termsandcondition",(req,res) =>{
       res.render('termsandcondition');
   });
-  app.get("*",(req,res) =>{
+  index.get("*",(req,res) =>{
       res.render('error');
   });
-  app.listen(port, () => {
+  index.listen(port, () => {
       console.log("Your port connection is successfull!!");
   });
 
